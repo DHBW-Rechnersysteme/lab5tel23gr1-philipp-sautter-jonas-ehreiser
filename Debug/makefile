@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -68,8 +68,8 @@ all: main-build
 main-build: USB_Test.elf secondary-outputs
 
 # Tool invocations
-USB_Test.elf USB_Test.map: $(OBJS) $(USER_OBJS) C:\Users\Mit08\Documents\STM32_Tests\USB_Test\STM32F746ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "USB_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Mit08\Documents\STM32_Tests\USB_Test\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+USB_Test.elf USB_Test.map: $(OBJS) $(USER_OBJS) C:\Users\jonas\Documents\lab5tel23gr1-philipp-sautter-jonas-ehreiser\STM32F746ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "USB_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\jonas\Documents\lab5tel23gr1-philipp-sautter-jonas-ehreiser\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
